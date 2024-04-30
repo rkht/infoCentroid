@@ -1,0 +1,638 @@
+.insurance_nav_manu {
+    transition: .5s;
+    z-index: 2;
+    position: relative;
+    /* padding: 0 70px 0; */
+    margin-bottom: -174px;
+  }
+  
+  .sticky {
+    left: 0;
+    margin: auto;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
+    background: #fff !important;
+    transition: .5s !important;
+    z-index: 922;
+    animation: 500ms running slideInDown;
+    animation-name: slideInDown;
+  }
+  
+  .sticky .insurance_menu>ul>li>a {
+    color: darkorange;
+  }
+  
+  .sticky .header-button a  {
+      color: #232323;
+      border: 1px solid #232323;
+  }
+  
+  .sticky .header-button a:hover  {
+    color: #fff;
+  }
+  
+  /* insurance Menu Css*/
+  nav.insurance_menu {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .insurance_menu ul {
+      list-style: none;
+      /* display: flex; */
+  }
+  
+  .insurance_menu>ul>li {
+      display: inline-flex;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .insurance_menu>ul>li>a {
+    font-size: 17px;
+    display: inline-block;
+    margin: 35px 13px;
+    transition: .5s;
+    color: white;
+    font-weight: 600;
+    position: relative;
+  }
+  
+  nav.insurance_menu span {
+      font-size: 11px;
+      padding-left: 5px;
+      opacity: .5;
+  }
+  
+  .insurance_menu ul li a:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: -5px;
+    width: 0%;
+    background: #000000;
+    height: 1px;
+    transition: .5s;
+  }
+  
+  .insurance_menuu ul li a:hover:before{
+    width:100%;
+    left:0%;
+  }
+  .insurance_menu ul .sub-menu li a:before {
+    display: none;
+  }
+  
+  /*menu button*/
+  
+  .header-button {
+      display: inline-block;
+  }
+  
+  .header-button a {
+    font-size: 16px;
+    padding: 10px 30px;
+    font-weight: 500;
+    color: #fff;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    transition: .5s;
+    margin-left: 30px;
+  }
+  
+  .header-button a:before {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 5px;
+      background: linear-gradient(to bottom right, #ff9b07 0%, #fd4f2f 90%);
+      transform: scale(0);
+      transition: .5s;
+  }
+  
+  
+  .header-button a:hover:before {
+      transform: scale(1);
+  }
+  
+  /* Style-2 Nave menu  
+  =========================*/
+  
+  .style-2.insurance_nav_manu {
+    margin-bottom: 0;
+  }
+  
+  .style-2 .insurance_menu>ul>li>a {
+    color: darkorange;
+  }
+  
+  .style-2 .header-button a  {
+    color: #232323;
+    border: 1px solid #232323;
+  }
+  
+  .style-2 .header-button a:hover  {
+    color: #fff;
+    border: 1px solid linear-gradient(to bottom right, #ff9b07 0%, #fd4f2f 90%);
+  }
+  
+  
+  
+  
+  
+  /*** Sub Menu Style 
+  ==========================***/
+  
+  .insurance_menu ul .sub-menu {
+      position: absolute;
+      left: 0;
+      top: 130%;
+      width: 217px;
+      text-align: left;
+      background: #fff;
+      margin: 0;
+      z-index: 1;
+      -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+      transition: .5s;
+      visibility: hidden;
+      border-top: 2px solid #1CBEFF;
+      opacity: 0;
+  }
+  
+  .insurance_menu ul li:hover>.sub-menu {
+      visibility: visible;
+      top: 100%;
+      opacity: 1;
+  }
+  
+  .insurance_menu ul .sub-menu li {
+      position: relative;
+  }
+  
+  .insurance_menu ul .sub-menu li a {
+    display: block;
+    padding: 12px 20px;
+    margin: 0;
+    line-height: 1.3;
+    letter-spacing: normal;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: .5s;
+    visibility: inherit !important;
+    color: #101210 !important;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .insurance_menu ul .sub-menu li a:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0;
+    background: #00237d;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+  .insurance_menu ul .sub-menu li a:hover:after {
+    height: 100%;
+    top: 0;
+  }
+  
+  .insurance_menu ul .sub-menu li:hover>a,
+  .insurance_menu ul .sub-menu .sub-menu li:hover>a,
+  .insurance_menu ul .sub-menu .sub-menu .sub-menu li:hover>a,
+  .insurance_menu ul .sub-menu .sub-menu .sub-menu .sub-menu li:hover>a {
+      background: #00237d;
+      color: #fff !important;
+  }
+  
+  /* sub menu 2 
+  =================*/
+  
+  .insurance_menu ul .sub-menu .sub-menu {
+      left: 100%;
+      top: 130%;
+      opacity: 0;
+      visibility: hidden;
+  }
+  
+  .insurance_menu ul .sub-menu li:hover>.sub-menu {
+      opacity: 1;
+      visibility: visible;
+      top: 0%;
+  }
+  
+  /* sub menu 3 
+  ==================*/
+  
+  .insurance_menu ul .sub-menu .sub-menu li {
+      position: relative;
+  }
+  
+  .insurance_menu ul .sub-menu .sub-menu .sub-menu {
+      right: 100%;
+      left: auto;
+      top: 130%;
+      opacity: 0;
+      visibility: hidden;
+  }
+  
+  .insurance_menu ul .sub-menu .sub-menu li:hover>.sub-menu {
+      opacity: 1;
+      visibility: visible;
+      top: 0%;
+  }
+  
+  ul.sub-menu li a span {
+      background: #ffde5d;
+      padding: 5px 10px;
+      color: #fff;
+      opacity: 1;
+      font-family: 'Fira Sans';
+      border-radius: 2px;
+      margin-left: 5px;
+      transition: .5s;
+  }
+  
+  ul.sub-menu li:hover a span{
+      background: rgba(255,255,255, 0.20);
+  }
+  
+  /* sub menu 4 
+  ====================*/
+  
+  .insurance_menu ul .sub-menu .sub-menu .sub-menu li {
+      position: relative;
+  }
+  
+  
+  .insurance_menu ul .sub-menu .sub-menu .sub-menu li:hover>.sub-menu {
+      opacity: 1;
+      visibility: visible;
+      top: 0%;
+  }
+  
+  .insurance_menu li a:hover:before {
+    transition: inherit;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+  }
+  
+  .insurance_nav_manu.sticky .logo_img {
+      display: none;
+  }
+  
+  .main_sticky {
+      display: none;
+  }
+  
+  .insurance_nav_manu.sticky .main_sticky {
+      display: inherit;
+  }
+  
+  .mobile-menu.mean-container {
+      overflow: hidden;
+  }
+  
+  
+  
+  /*
+  <!-- ============================================================== -->
+  <!-- Start insurance Slider Section Css -->
+  <!-- ============================================================== -->*/
+  
+  .slider_area  {
+    /* background-color: #580458; */
+      background: url(banner-img.jpg);
+      background-size: cover;
+      background-position: inherit;
+      background-repeat: no-repeat;
+      height: 850px;
+      position: relative;
+      z-index: 1;
+  }
+  
+  .hero_section_thumb {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-main-thumb {
+    padding-left: 122px;
+  }
+  
+  .slider_text_inner h5 {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 700;
+      margin: 0 0 24px;
+      letter-spacing: 0;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+  }
+  .slider_text_inner h5:before {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: -2px;
+      right: -10px;
+      width: 30px;
+      height: 27px;
+      background: #6989CA;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 65% 100%);
+      transition: .5s;
+  }
+  .slider_text_inner h1 {
+      font-size: 58px;
+      text-transform: none;
+      font-weight: 700;
+      color: #fff;
+      margin: 0;
+      line-height: 1.2;
+  }
+  
+  .slider_text_inner p {
+    font-family: emoji;
+    width: 95%;
+    padding: 15px 0 10px;
+    color: #fffefe;
+  }
+  
+  .button a {
+    font-size: 18px;
+    padding: 14px 42px;
+    font-weight: 500;
+    color: linear-gradient(to bottom right, #ff9b07 0%, #fd4f2f 90%);
+    background: #fff;
+    display: inline-block;
+    border-radius: 40px;
+    border: 1px solid #fff;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .button a:before {
+      position: absolute;
+      content: "";
+      z-index: -1;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: 0;
+      background: linear-gradient(to bottom right, #ff9b07 0%, #fd4f2f 90%);
+      border-radius: 30px;
+      transition: .5s;
+  }
+  
+  .upper.button a {
+      background: inherit;
+      display: inline-block;
+      border: 1px solid black;
+      color: black;
+  }
+  
+  .upper.button a:before {
+    border-radius: 5px;
+  }
+  
+  
+  .slider_button span {
+      color: #fff;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 13px 19px 0;
+  }
+  
+  /* all hover
+  ======================*/
+  
+  .button a:hover:before {
+      width: 100%;
+      left: 0;
+  }
+  
+  .button a:hover {
+      color: #fff;
+  }
+   .slider_text_inner h5:hover:before {
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      width: 110%;
+  }
+  
+  
+  /* hero all shape */
+  
+  .em-hero-inner-thumb {
+      position: absolute;
+      top: 56px;
+      left: 411px;
+      z-index: -1;
+  }
+  
+  .em-hero-inner-shape {
+    position: absolute;
+    top: 188px;
+    left: 0;
+    animation: moveLeftBounce 3s linear infinite;
+    z-index: -1;
+  }
+  #contact_form{
+    padding: 15px;
+      background:aliceblue;
+      width: 90%;
+      border-radius: 7px;
+  }
+  
+  /* Slider Style two */
+  
+  .slider-2 {
+    background-image: url(../images/slider/seo-bg.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 950px;
+    position: relative;
+  }
+  
+  .slider-2 .slider_text_inner h1 {
+    color: rgb(35, 35, 35);
+  }
+  
+  .slider-2 .slider_text_inner h5 {
+    color: rgb(12, 89, 219);
+    padding-left: 54px;
+  }
+  
+  .slider-2 .slider_text_inner h5:before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    top: 11px;
+    right: 127px;
+    width: 42px;
+    height: 1px;
+    background: #6989CA;
+    clip-path: inherit;
+    transition: .5s;
+  }
+  
+  .slider-2 .slider_text_inner p {
+    padding: 15px 0 15px;
+    color: rgb(97, 97, 97);
+    font-size: 17px;
+  }
+  
+  .slider-2 .button a {
+    padding: 15px 42px;
+    background: linear-gradient(255deg, rgb(36, 117, 252) 0%, rgb(17, 41, 185) 100%);
+    color: #fff;
+  }
+  
+  .slider-2 .button a:before {
+    border-radius: 3px;
+  }
+  
+  .slider-2 .button a i {
+    font-size: 16px;
+  }
+  
+  
+  /*hero thumb style two
+  ===========================*/
+  
+  .slider-all-shape {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .slider-2 .em-hero-inner-thumb {
+    position: absolute;
+    top: 115px;
+    left: -15px;
+    z-index: 1;
+  }
+  
+  .slider-2 .em-hero-inner-thumb2 {
+    position: absolute;
+    top: -22px;
+    right: -81px;
+    animation: moveLeftBounce 3s linear infinite;
+  }
+  .slider-2 .em-hero-inner-thumb3 {
+    position: absolute;
+    bottom: -54px;
+    right: -200px;
+  }
+  
+  .slider-2 .em-hero-inner-shape1 {
+    position: absolute;
+    right: 200px;
+    bottom: -135px;
+  }
+  
+  .slider-2 .em-hero-inner-shape2 {
+    position: absolute;
+    left: -260px;
+    bottom: 105px;
+    animation: wooo 3.5s infinite;
+  }
+  /*wood animation*/
+  @keyframes wooo{
+  0%{
+    transform: rotate3d(0, 0, 0)   
+  }
+  50%{
+    transform: rotate3d(0, 1, 0, 180deg)   
+  }
+  100%{
+    transform: rotate3d(0, 1, 0, 359deg)   
+  }
+  }
+  
+  /*====================================================
+  --<	insurance Section title Css -->
+  ======================================================*/
+  
+  
+  .section_title h1 {
+    font-size: 40px;
+    text-transform: capitalize;
+    margin-top: 0;
+    line-height: 1.2;
+    font-weight: 800;
+  }
+  
+  .section_title h5 {
+    color: linear-gradient(to bottom right, #ff9b07 0%, #fd4f2f 90%);
+    font-size: 18px;
+    margin: 0 0 20px;
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0;
+    display: inline-block;
+  }
+  
+  .section_title h5:before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    right: -10px;
+    top: -2px;
+    background: #CEDEF8;
+    width: 30px;
+    height: 26px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 65% 100%);
+    transition: .5s;
+  }
+  
+  .white.section_title h5 {
+    color: #fff;
+  }
+  
+  .section_title h5:hover:before {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    width: 107%;
+  }
+  
+  /* .section_content_desc p {
+    padding: 18px 0 0;
+  } */
+  
+  .section_title h4 {
+    color: linear-gradient(to bottom right, #ff9b07 0%, #fd4f2f 90%);
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0 0 15px;
+  }
+  
+  .section_title h1 span {
+    color: linear-gradient(to bottom right, #ff9b07 0%, #fd4f2f 90%);
+  }
