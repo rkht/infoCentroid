@@ -1,48 +1,16 @@
 .insurance_nav_manu {
     transition: .5s;
     z-index: 2;
-    position: relative;
-    /* padding: 0 70px 0; */
+    position: fixed;
     margin-bottom: -174px;
   }
   
-  .sticky {
-    left: 0;
-    margin: auto;
-    position: fixed !important;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 2px 5px -2px rgba(0, 0, 0, 0.1);
-    background: #fff !important;
-    transition: .5s !important;
-    z-index: 922;
-    animation: 500ms running slideInDown;
-    animation-name: slideInDown;
+  .insurance_nav_manu ::after{
+    background-color: #fff;
+    
   }
   
-  .sticky .insurance_menu>ul>li>a {
-    color: darkorange;
-  }
-  
-  .sticky .header-button a  {
-      color: #232323;
-      border: 1px solid #232323;
-  }
-  
-  .sticky .header-button a:hover  {
-    color: #fff;
-  }
-  
-  /* insurance Menu Css*/
-  nav.insurance_menu {
-    text-align: center;
-    position: relative;
-    z-index: 1;
-  }
-  .insurance_menu ul {
-      list-style: none;
-      /* display: flex; */
-  }
+ 
   
   .insurance_menu>ul>li {
       display: inline-flex;
@@ -58,6 +26,7 @@
     color: white;
     font-weight: 600;
     position: relative;
+    text-decoration: none;
   }
   
   nav.insurance_menu span {
@@ -87,7 +56,6 @@
     display: none;
   }
   
-  /*menu button*/
   
   .header-button {
       display: inline-block;
@@ -127,9 +95,7 @@
       transform: scale(1);
   }
   
-  /* Style-2 Nave menu  
-  =========================*/
-  
+ 
   .style-2.insurance_nav_manu {
     margin-bottom: 0;
   }
@@ -152,8 +118,7 @@
   
   
   
-  /*** Sub Menu Style 
-  ==========================***/
+  
   
   .insurance_menu ul .sub-menu {
       position: absolute;
@@ -215,16 +180,8 @@
     top: 0;
   }
   
-  .insurance_menu ul .sub-menu li:hover>a,
-  .insurance_menu ul .sub-menu .sub-menu li:hover>a,
-  .insurance_menu ul .sub-menu .sub-menu .sub-menu li:hover>a,
-  .insurance_menu ul .sub-menu .sub-menu .sub-menu .sub-menu li:hover>a {
-      background: #00237d;
-      color: #fff !important;
-  }
   
-  /* sub menu 2 
-  =================*/
+  
   
   .insurance_menu ul .sub-menu .sub-menu {
       left: 100%;
@@ -239,8 +196,6 @@
       top: 0%;
   }
   
-  /* sub menu 3 
-  ==================*/
   
   .insurance_menu ul .sub-menu .sub-menu li {
       position: relative;
@@ -275,9 +230,7 @@
       background: rgba(255,255,255, 0.20);
   }
   
-  /* sub menu 4 
-  ====================*/
-  
+ 
   .insurance_menu ul .sub-menu .sub-menu .sub-menu li {
       position: relative;
   }
@@ -303,28 +256,9 @@
     border-radius: 4px;
   }
   
-  .insurance_nav_manu.sticky .logo_img {
-      display: none;
-  }
-  
-  .main_sticky {
-      display: none;
-  }
-  
-  .insurance_nav_manu.sticky .main_sticky {
-      display: inherit;
-  }
-  
-  .mobile-menu.mean-container {
-      overflow: hidden;
-  }
   
   
   
-  /*
-  <!-- ============================================================== -->
-  <!-- Start insurance Slider Section Css -->
-  <!-- ============================================================== -->*/
   
   .slider_area  {
     /* background-color: #580458; */
@@ -340,50 +274,18 @@
   .hero_section_thumb {
     position: relative;
     z-index: 1;
+    width: 500px;
   }
   
-  .hero-main-thumb {
-    padding-left: 122px;
+ .hero_section_thumb input{
+    margin-top: 15px;
+    height: 35px;
+    border-radius: 4px;
   }
   
-  .slider_text_inner h5 {
-      font-size: 18px;
-      text-transform: uppercase;
-      color: #fff;
-      font-weight: 700;
-      margin: 0 0 24px;
-      letter-spacing: 0;
-      display: inline-block;
-      position: relative;
-      z-index: 1;
-  }
-  .slider_text_inner h5:before {
-      position: absolute;
-      content: "";
-      z-index: -1;
-      top: -2px;
-      right: -10px;
-      width: 30px;
-      height: 27px;
-      background: #6989CA;
-      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 65% 100%);
-      transition: .5s;
-  }
-  .slider_text_inner h1 {
-      font-size: 58px;
-      text-transform: none;
-      font-weight: 700;
-      color: #fff;
-      margin: 0;
-      line-height: 1.2;
-  }
+ 
   
-  .slider_text_inner p {
-    font-family: emoji;
-    width: 95%;
-    padding: 15px 0 10px;
-    color: #fffefe;
-  }
+ 
   
   .button a {
     font-size: 18px;
@@ -397,6 +299,8 @@
     position: relative;
     z-index: 1;
     overflow: hidden;
+    margin-top: 15px;
+    text-decoration: none;
   }
   
   .button a:before {
@@ -407,29 +311,12 @@
       right: 0;
       height: 100%;
       width: 0;
-      background: linear-gradient(to bottom right, #ff9b07 0%, #fd4f2f 90%);
+      background: linear-gradient(to bottom right, #85683c 0%, #632c23 90%);
       border-radius: 30px;
       transition: .5s;
   }
   
-  .upper.button a {
-      background: inherit;
-      display: inline-block;
-      border: 1px solid black;
-      color: black;
-  }
-  
-  .upper.button a:before {
-    border-radius: 5px;
-  }
-  
-  
-  .slider_button span {
-      color: #fff;
-      font-size: 18px;
-      font-weight: 600;
-      padding: 13px 19px 0;
-  }
+ 
   
   /* all hover
   ======================*/
@@ -448,7 +335,6 @@
   }
   
   
-  /* hero all shape */
   
   .em-hero-inner-thumb {
       position: absolute;
@@ -471,7 +357,6 @@
       border-radius: 7px;
   }
   
-  /* Slider Style two */
   
   .slider-2 {
     background-image: url(../images/slider/seo-bg.jpg);
@@ -504,128 +389,25 @@
     transition: .5s;
   }
   
-  .slider-2 .slider_text_inner p {
-    padding: 15px 0 15px;
-    color: rgb(97, 97, 97);
-    font-size: 17px;
-  }
   
-  .slider-2 .button a {
-    padding: 15px 42px;
-    background: linear-gradient(255deg, rgb(36, 117, 252) 0%, rgb(17, 41, 185) 100%);
-    color: #fff;
-  }
   
-  .slider-2 .button a:before {
-    border-radius: 3px;
-  }
   
-  .slider-2 .button a i {
-    font-size: 16px;
+  
+  .section_title  {
+    margin-top: 70px;
+   margin-bottom:30px;
   }
   
   
-  /*hero thumb style two
-  ===========================*/
-  
-  .slider-all-shape {
-    position: relative;
-    z-index: 1;
-  }
-  
-  .slider-2 .em-hero-inner-thumb {
-    position: absolute;
-    top: 115px;
-    left: -15px;
-    z-index: 1;
-  }
-  
-  .slider-2 .em-hero-inner-thumb2 {
-    position: absolute;
-    top: -22px;
-    right: -81px;
-    animation: moveLeftBounce 3s linear infinite;
-  }
-  .slider-2 .em-hero-inner-thumb3 {
-    position: absolute;
-    bottom: -54px;
-    right: -200px;
-  }
-  
-  .slider-2 .em-hero-inner-shape1 {
-    position: absolute;
-    right: 200px;
-    bottom: -135px;
-  }
-  
-  .slider-2 .em-hero-inner-shape2 {
-    position: absolute;
-    left: -260px;
-    bottom: 105px;
-    animation: wooo 3.5s infinite;
-  }
-  /*wood animation*/
-  @keyframes wooo{
-  0%{
-    transform: rotate3d(0, 0, 0)   
-  }
-  50%{
-    transform: rotate3d(0, 1, 0, 180deg)   
-  }
-  100%{
-    transform: rotate3d(0, 1, 0, 359deg)   
-  }
-  }
-  
-  /*====================================================
-  --<	insurance Section title Css -->
-  ======================================================*/
-  
-  
-  .section_title h1 {
-    font-size: 40px;
-    text-transform: capitalize;
-    margin-top: 0;
-    line-height: 1.2;
-    font-weight: 800;
-  }
+ 
   
   .section_title h5 {
-    color: linear-gradient(to bottom right, #ff9b07 0%, #fd4f2f 90%);
-    font-size: 18px;
-    margin: 0 0 20px;
-    position: relative;
-    z-index: 1;
-    letter-spacing: 0;
-    display: inline-block;
+    border-radius: 1px;
+    border: 1px solid black;
+    width: 300px;
+    
   }
-  
-  .section_title h5:before {
-    position: absolute;
-    content: "";
-    z-index: -1;
-    right: -10px;
-    top: -2px;
-    background: #CEDEF8;
-    width: 30px;
-    height: 26px;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 65% 100%);
-    transition: .5s;
-  }
-  
-  .white.section_title h5 {
-    color: #fff;
-  }
-  
-  .section_title h5:hover:before {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    width: 107%;
-  }
-  
-  /* .section_content_desc p {
-    padding: 18px 0 0;
-  } */
-  
+ 
   .section_title h4 {
     color: linear-gradient(to bottom right, #ff9b07 0%, #fd4f2f 90%);
     font-size: 20px;
@@ -633,6 +415,269 @@
     padding: 0 0 15px;
   }
   
-  .section_title h1 span {
-    color: linear-gradient(to bottom right, #ff9b07 0%, #fd4f2f 90%);
+ 
+  
+ 
+    .service-single-box{
+      border-radius: 2px;
+      
+    }
+  
+  .service-title h2 {
+      font-size: 22px;
+      padding: 16px 0 10px; 
+      transition: .5s;
   }
+  .service-desc p {
+    transition: .5s;
+    line-height: 20px;
+    text-align: left;
+    word-spacing: -1px;
+    font-family:'Montserrat';
+  }
+  
+  
+  
+  
+.service-content {
+  overflow-y: scroll;
+  height: 300px;
+  padding: 15px 19px 0px;
+}
+
+
+
+.service-single-box:hover .service-title h2, .service-single-box:hover .service-desc p {
+  color:#e21717;
+ 
+}
+
+.faq-thumb {
+  position: relative;
+  left: -106px;
+}
+
+/*Accordion
+====================*/
+.process-contant :hover{
+ color: green;
+}
+.accordion li {
+  position: relative;
+  list-style: none;
+  padding: 2px 0px 25px;
+}
+
+.upper.accordion li:before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  right: 27px;
+  top: 0px;
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
+  border-radius: 50%;
+  background-image: linear-gradient(0deg, #b4f815 0%, #fd545c 100%);
+  background: linear-gradient(to bottom,transparent -80%,#00247e);
+}
+
+.accordion li a {
+  width: 100%;
+  display: block;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 20px;
+  color: #232323;
+}
+.accordion li p {
+  display: none;
+  font-size: 16px;
+  padding-top: 20px;
+  margin: 0;
+}
+.accordion a:before {
+  width: 2px;
+  height: 12px;
+  background: #fff;
+  position: absolute;
+  right: 43px;
+  content: " ";
+  top: 12px;
+  transform: rotate(0deg);
+  transition: all 0.2s ease-in-out;
+}
+.accordion a:after {
+  width: 12px;
+  height: 2px;
+  background: #fff;
+  position: absolute;
+  right: 38px;
+  content: " ";
+  top: 17px;
+  transition: all 0.2s ease-in-out;
+}
+
+
+
+
+.footer-bottom {
+  border-top: 1px solid rgba(255,255,255,.23);
+  margin: 70px 0 0;
+  padding: 25px 0 10px;
+}
+
+.footer-bottom-content-copy p {
+  color: darkorange;
+  
+}
+
+.footer-bottom-right {
+  text-align: right;
+  
+}
+
+.footer-bottom-info a {
+  color: darkorange;
+  display: inline-block;
+  margin-left: 40px;
+  text-decoration: none;
+
+}
+.flipbox_area {
+  padding: 120px 0 90px;
+}
+
+
+.insurance_flipbox {
+	perspective: 1000px;
+	position: relative;
+	/* transform-style: preserve-3d; */
+	z-index: 1;
+  margin-bottom: 30px;
+}
+
+.insurance_flipbox .insurance_flipbox_font, .insurance_flipbox .insurance_flipbox_back {
+  min-height: 220px;
+  height: auto;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  position: relative;
+  border-radius: 5px;
+}
+
+.insurance_flipbox .insurance_flipbox_back::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom,transparent -80%,#00247e);
+}
+
+.insurance_flipbox .icon {
+  color: #fff;
+  font-size: 40px;
+  line-height: 90px;
+  height: 90px;
+  width: 90px;
+  background: linear-gradient(to bottom right, #ff9b07 0%, #fd4f2f 90%);
+  border-radius: 33% 66% 7% 30%/49% 62% 38% 51% !important;
+  text-align: center;
+
+}
+
+
+.insurance_flipbox .insurance_flipbox_inner {
+	padding: 0 25px;
+	border-radius: 2px;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	perspective: inherit;
+	outline: transparent solid 1px;
+	backface-visibility: hidden;
+	transform: translateY(-50%) translateZ(60px) scale(0.94);
+	z-index: 2;
+}
+
+
+
+.insurance_flipbox .insurance_flipbox_back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	border-radius: 2px;
+	transform: rotateX(180deg);
+	transform-style: preserve-3d;
+}
+.insurance_flipbox:hover .insurance_flipbox_font {
+	-webkit-transform: rotateX(-180deg);
+	transform: rotateX(-180deg);
+}
+.insurance_flipbox:hover .insurance_flipbox_back {
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+.footer-section {
+  background-color: whitesmoke;
+  /* background: linear-gradient(to bottom right, #ff9b07 0%, #fd4f2f 90%); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 45px 0 0;
+}
+
+.widget-title {
+  color: rgb(31, 25, 18);
+  font-size: 22px;
+  padding: 0 0 40px;
+}
+
+.company-info-desc p {
+  color: rgb(14, 12, 10);
+  padding: 40px 0 6px;
+}
+
+.follow-company-text a {
+  font-size: 20px;
+  padding: 0px 0 20px;
+  color: rgb(10, 8, 6);
+  display: inline-block;
+}
+
+.follow-company-icon a {
+  font-size: 16px;
+  color: #fff;
+  margin-right: 5px;
+  font-weight: 500;
+  display: inline-block;
+  transition: .5s;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  border-radius: 30px;
+  text-align: center;
+  background: rgb(12, 10, 9);
+  position: relative;
+}
+
+.menu-quick-link ul li {
+  padding-bottom: 20px;
+  list-style: none;
+}
+
+.menu-quick-link ul li a {
+  color: darkorange;
+  position:relative;
+  transition:.5s;
+  text-decoration: none;
+}
+
+.follow-company-icon a:hover {
+   background-color: aquamarine;
+  /* background: #fff; */
+  text-align: justify;
+}

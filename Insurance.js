@@ -16,3 +16,9 @@ window.addEventListener("scroll", function() {
         header.classList.remove("sticky");
     }
 });
+// JavaScript code
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('.header');
+    header.classList.toggle('scrolled', window.scrollY > 0);
+  });
+  
